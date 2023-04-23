@@ -16,7 +16,7 @@
             margin: 0;
         }
         </style>
-        <title>Potential Development Sites</title>
+        <title>Sites</title>
     </head>
     <body>
         <div id="map">
@@ -37,7 +37,7 @@
             zoomControl:true, maxZoom:28, minZoom:1
         })
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://www.lidl.co.uk/" target="_blank">Lidl GB</a> - Map by Alpha Spatial Ltd');
+        map.attributionControl.setPrefix('Map by Alpha Spatial Ltd');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
